@@ -43,7 +43,6 @@ SkillSwap/
 │   └── test_app_flow.py      # end to end: register -> match -> request -> session -> rating
 ├── README.md
 ├── statement.md
-├── .gitignore
 └── data/                     # made automatically on the first run (not committed)
     ├── students.txt
     ├── requests.txt
