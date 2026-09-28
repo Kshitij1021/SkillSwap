@@ -2,6 +2,13 @@
 so the real data/ folder is never touched."""
 
 import os
+import sys
+
+# lets a test file also be run directly (e.g. the "Run Python File" button in VS Code):
+# the project root is added to the path so `import skillswap` works from anywhere
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+import os
 import tempfile
 import unittest
 from unittest import mock

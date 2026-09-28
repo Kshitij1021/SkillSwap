@@ -5,6 +5,13 @@ at a temp folder. The steps follow the manual test in README.md:
 register A and B -> add skills -> match -> request -> accept -> schedule -> rate.
 """
 
+import os
+import sys
+
+# lets a test file also be run directly (e.g. the "Run Python File" button in VS Code):
+# the project root is added to the path so `import skillswap` works from anywhere
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import contextlib
 import io
 import os
